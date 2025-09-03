@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const languageSelect = document.getElementById('language-select');
   const themeSelect = document.getElementById('theme-select');
 
-  if (!window.translations) {
+  if (typeof translations === 'undefined') {
     console.error('translations.js não carregado. Verifique js/translations.js');
     return;
   }
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // sections: about
     if (document.getElementById('about-title') && t.about?.title) document.getElementById('about-title').textContent = t.about.title;
-    if (document.getElementById('about-content') && t.about?.content) document.getElementById('about-content').textContent = t.about.content;
+    if (document.getElementById('about-content') && t.about?.content) document.getElementById('about-content').innerHTML = t.about.content;
 
     // experience
     if (document.getElementById('experience-title') && t.experience?.title) document.getElementById('experience-title').textContent = t.experience.title;
@@ -49,26 +49,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('lang') || 'pt';
   const savedTheme = localStorage.getItem('theme') || 'light';
 
+  // Definir valores dos selects
   if (languageSelect) languageSelect.value = savedLang;
   if (themeSelect) themeSelect.value = savedTheme;
 
+  // Aplicar configurações salvas
   changeLanguage(savedLang);
   applyTheme(savedTheme);
+
+  // Debug
+  console.log('Idioma carregado:', savedLang);
+  console.log('Tema carregado:', savedTheme);
 
   // Listeners
   if (languageSelect) {
     languageSelect.addEventListener('change', (e) => {
       const lang = e.target.value;
+      console.log('Mudando idioma para:', lang);
       localStorage.setItem('lang', lang);
       changeLanguage(lang);
     });
+  } else {
+    console.error('Elemento language-select não encontrado');
   }
 
   if (themeSelect) {
     themeSelect.addEventListener('change', (e) => {
       const theme = e.target.value;
+      console.log('Mudando tema para:', theme);
       localStorage.setItem('theme', theme);
       applyTheme(theme);
     });
+  } else {
+    console.error('Elemento theme-select não encontrado');
   }
 });
