@@ -1,0 +1,28 @@
+{
+  "name": "fab1omendes.github.io",
+  "version": "1.0.0",
+  "description": "2025 Fabio Mendes - Desenvolvedor Full Stack e Analise de Dados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fab1omendes/fab1omendes.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fab1omendes/fab1omendes.github.io/issues"
+  },
+  "homepage": "https://github.com/fab1omendes/fab1omendes.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12"
+  }
+}
