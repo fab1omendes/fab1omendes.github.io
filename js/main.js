@@ -1,30 +1,51 @@
-const languageSelect = document.getElementById('language');
-const themeSelect = document.getElementById('theme');
+document.addEventListener('DOMContentLoaded', () => {
+  const languageSelect = document.getElementById('language');
+  const themeSelect = document.getElementById('theme');
 
-const titleEl = document.getElementById('title');
-const subtitleEl = document.getElementById('subtitle');
-const contentEl = document.getElementById('content');
+  const titleEl = document.getElementById('title');
+  const subtitleEl = document.getElementById('subtitle');
+  const contentEl = document.getElementById('content');
 
-// Função para atualizar idioma
-function updateLanguage(lang) {
-  titleEl.textContent = translations[lang].title;
-  subtitleEl.textContent = translations[lang].subtitle;
-  contentEl.textContent = translations[lang].content;
-}
+  if (!window.translations) {
+    console.error('translations.js não carregado (verifique o caminho e o nome do arquivo).');
+    return;
+  }
 
-// Inicializa idioma padrão
-updateLanguage(languageSelect.value);
+  function updateLanguage(lang) {
+    const t = translations[lang] || translations.pt;
+    if (titleEl) titleEl.textContent = t.title;
+    if (subtitleEl) subtitleEl.textContent = t.subtitle;
+    if (contentEl) contentEl.textContent = t.content;
+  }
 
-// Evento de mudança de idioma
-languageSelect.addEventListener('change', () => {
-  updateLanguage(languageSelect.value);
-});
+  function applyTheme(theme) {
+    if (theme === 'dark') document.documentElement.classList.add('dark');
+    else document.documentElement.classList.remove('dark');
+  }
 
-// Tema
-themeSelect.addEventListener('change', () => {
-  if(themeSelect.value === 'dark') {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
+  // Carrega preferências salvas (opcional)
+  const savedLang = localStorage.getItem('lang') || 'pt';
+  const savedTheme = localStorage.getItem('theme') || 'light';
+
+  if (languageSelect) languageSelect.value = savedLang;
+  if (themeSelect) themeSelect.value = savedTheme;
+
+  updateLanguage(savedLang);
+  applyTheme(savedTheme);
+
+  if (languageSelect) {
+    languageSelect.addEventListener('change', () => {
+      const lang = languageSelect.value;
+      updateLanguage(lang);
+      localStorage.setItem('lang', lang);
+    });
+  }
+
+  if (themeSelect) {
+    themeSelect.addEventListener('change', () => {
+      const theme = themeSelect.value;
+      applyTheme(theme);
+      localStorage.setItem('theme', theme);
+    });
   }
 });
