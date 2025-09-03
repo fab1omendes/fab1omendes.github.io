@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fab1omendes page multilanguage</title>
-    <script>
-    tailwind.config = { darkMode: 'class' };
-    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        darkMode: "class"
+    }
+    </script>
     <script src="js/translations.js"></script>
 </head>
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
     <header class="p-6 bg-gray-100 dark:bg-gray-800">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div>
             <h1 id="title" class="text-3xl font-bold">Bem-vindo</h1>
-            <h2 id="subtitle" class="text-xl font-semibold mb-4">Aqui você encontra todas as informações</h2>
-            <p id="content" class="mb-6">Este é um exemplo de site multilíngue usando TailwindCSS e JavaScript.</p>
+            <h2 id="subtitle" class="text-xl font-semibold">Aqui você encontra todas as informações</h2>
+            <p id="content">Este é um exemplo de site multilíngue usando TailwindCSS e JavaScript.</p>
+            </div>
 
+            <div class="flex">
             <!--Language Select-->
             <select name="language" id="language" class="border rounded p-2">
                 <option value="pt-br">Português-br</option>
                 <option value="en">English</option>
                 <option value="es">Español</option>
             </select>
-
             <!--Theme Select-->
             <select name="theme" id="theme" class="border rounded p-2 ml-2">
-                <option id="light" value="light">Claro</option>
-                <option id="dark" value="dark">Escuro</option>
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
             </select>
+            </div>
         </div>
     </header>
 
@@ -55,7 +61,7 @@
             
             <div>
                 <h3 id="about-2" class="text-xl font-semibold mb-4"> Formação Acadêmica </h3>
-                <p id="about-1-content" class="mb-6">
+                <p id="about-2-content" class="mb-6">
                     Graduação em Engenharia da Computação - Univesp SP, ago/2024 - cursando  </br>
                     Pós Graduação em Segurança da Informação - Unip, ago/2016 - jun/2019 </br>
                     Graduação em Sistemas de Informação - Unip, jan/2010 - jun/2014 </br>
@@ -89,7 +95,7 @@
     </main>
     
     <!-- JS com defer (garante DOM pronto) -->
-    <script src="/js/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="js/translations.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
