@@ -1,0 +1,56 @@
+{
+  "title": "Bienvenido",
+  "subtitle": "Aquí puedes encontrar toda la información",
+  "content": "Este es un ejemplo de sitio web multilingüe usando Next.js, TypeScript y TailwindCSS.",
+  "about": {
+    "title": "Fabio Mendes - Desarrollador Full Stack con experiencia en análisis de datos y ETL",
+    "content": "Desarrollador Full Stack con experiencia en análisis de datos y ETL. Graduado en Sistemas de Información y estudiando Ingeniería de Computación. Post-graduado en Seguridad de la Información. Experiencia en análisis de datos para gestión estratégica en Salud Pública."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "title": "Desarrollador Web en la Empresa X (2020 - actual)",
+        "description": "Desempeño sólido en TI durante 12 años como Desarrollador Full Stack, Análisis de Datos y soporte técnico de infraestructura y sistemas. Combinando conocimientos técnicos profundos con visión estratégica de negocios, permitiendo entregar soluciones que realmente impactan los resultados de la empresa."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación",
+    "items": [
+      "Grado en Ingeniería de Computación - Univesp SP, ago/2024 - cursando",
+      "Post-graduado en Seguridad de la Información - Unip, ago/2016 - jun/2019",
+      "Grado en Sistemas de Información - Unip, ene/2010 - jun/2014",
+      "Educación Técnica en Informática - Etec Jorge Street, ago/2008 - jun/2010"
+    ]
+  },
+  "skills": {
+    "title": "Diferenciales",
+    "items": [
+      "Desarrollador Full Stack Completo",
+      "Frontend, Backend, DevOps, Docker e Infraestructura Linux",
+      "Análisis de Datos",
+      "SQL Avanzado, ETLs, automatizaciones, Python, Dash, Streamlit y Power BI"
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "title": "DW-saude",
+        "description": "Proyecto de Data-Warehouse, desarrollado con Python, Dash, Tailwind CSS, HTML5, SQL y Docker. Data Warehouse con control de acceso, que presenta reportes y gráficos de los datos de salud del prontuario electrónico e-SUS PEC, necesarios estratégicamente para la gestión hacer el seguimiento de los indicadores de salud determinados por el gobierno para la transferencia financiera, y también auxilia en el suministro de insights y prospección para realizar la mejora de la producción."
+      }
+    ]
+  },
+  "navigation": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "skills": "Diferenciales",
+    "projects": "Proyectos"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro"
+  }
+}
