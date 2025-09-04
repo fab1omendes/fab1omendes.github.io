@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { AppProvider } from "@/contexts/AppContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,11 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt" className="dark">
+    <html lang="pt" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 antialiased`}
+        className={`${inter.variable} font-sans antialiased`}
       >
-        {children}
+        <AppProvider>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

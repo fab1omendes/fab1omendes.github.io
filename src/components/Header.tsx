@@ -1,69 +1,78 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
-import { useTheme } from '@/hooks/useTheme';
+import { useApp } from '@/contexts/AppContext';
 import { getTranslation } from '@/lib/translations';
-import { Sun, Moon, Globe } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Header() {
-  const { language, changeLanguage } = useLanguage();
-  const { theme, toggleTheme } = useTheme();
+  const { language, theme, changeLanguage, toggleTheme, mounted } = useApp();
+
+  if (!mounted) {
+    return (
+      <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-700/50">
+        <div className="max-w-4xl mx-auto px-6 py-6">
+          <div className="text-center">
+            <div className="animate-pulse">
+              <div className="h-10 bg-slate-200 dark:bg-slate-700 rounded w-80 mx-auto mb-3"></div>
+              <div className="h-5 bg-slate-200 dark:bg-slate-700 rounded w-64 mx-auto mb-2"></div>
+              <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-96 mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+    );
+  }
 
   return (
-    <header className="bg-gray-100 dark:bg-gray-800 shadow-lg">
-      <div className="max-w-6xl mx-auto px-4 py-6">
-        <div className="flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-700/50">
+      <div className="max-w-4xl mx-auto px-6 py-6">
+        <div className="text-center">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-3xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-100 mb-3">
               {getTranslation(language, 'title')}
             </h1>
-            <p className="text-sm mt-1 text-gray-600 dark:text-gray-300">
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-2">
               {getTranslation(language, 'subtitle')}
             </p>
-            <p className="text-xs mt-1 text-gray-500 dark:text-gray-400">
+            <p className="text-sm text-slate-500 dark:text-slate-500 max-w-2xl mx-auto">
               {getTranslation(language, 'content')}
             </p>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex items-center gap-3"
+            className="flex items-center justify-center gap-4 mt-6"
           >
             {/* Language Selector */}
-            <div className="relative">
-              <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 w-4 h-4" />
-              <select
-                value={language}
-                onChange={(e) => changeLanguage(e.target.value as 'pt' | 'en' | 'es')}
-                className="border rounded-lg px-10 py-2 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
-              >
-                <option value="pt">PT</option>
-                <option value="en">EN</option>
-                <option value="es">ES</option>
-              </select>
-            </div>
+            <select
+              value={language}
+              onChange={(e) => changeLanguage(e.target.value as 'pt' | 'en' | 'es')}
+              className="px-4 py-2 text-sm bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg text-slate-700 dark:text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all hover:border-slate-400 dark:hover:border-slate-500"
+            >
+              <option value="pt">🇧🇷 Português</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="es">🇪🇸 Español</option>
+            </select>
 
             {/* Theme Toggle */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors"
+              className="p-2 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all hover:border-slate-400 dark:hover:border-slate-500"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
-                <Moon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                <Moon className="w-5 h-5 text-slate-600 dark:text-slate-400" />
               ) : (
-                <Sun className="w-5 h-5 text-yellow-500" />
+                <Sun className="w-5 h-5 text-slate-600 dark:text-slate-400" />
               )}
-            </motion.button>
+            </button>
           </motion.div>
         </div>
       </div>

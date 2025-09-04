@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="max-w-6xl mx-auto px-4 py-8 space-y-8">
+      <main className="max-w-4xl mx-auto px-6 py-12 space-y-12">
         <About />
         <Experience />
         <Education />

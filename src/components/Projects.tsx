@@ -1,12 +1,12 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
+import { useApp } from '@/contexts/AppContext';
 import { getTranslation, getTranslationArrayOfObjects } from '@/lib/translations';
 import { motion } from 'framer-motion';
 import { FolderOpen } from 'lucide-react';
 
 export default function Projects() {
-  const { language } = useLanguage();
+  const { language } = useApp();
   const projectsItems = getTranslationArrayOfObjects(language, 'projects.items') as Array<{
     title: string;
     description: string;
@@ -14,38 +14,48 @@ export default function Projects() {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700"
+      className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200/50 dark:border-slate-700/50 p-8"
     >
-      <div className="flex items-start gap-4">
-        <div className="p-3 bg-indigo-100 dark:bg-indigo-900 rounded-full">
-          <FolderOpen className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
-        </div>
-        <div className="flex-1">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">
-            {getTranslation(language, 'projects.title')}
-          </h2>
-          <div className="space-y-6">
-            {projectsItems.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-6 bg-gradient-to-r from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 rounded-lg border border-indigo-200 dark:border-indigo-700 hover:shadow-lg transition-shadow"
-              >
-                <h3 className="text-xl font-semibold text-indigo-800 dark:text-indigo-200 mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  {project.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      <div className="text-center mb-8">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl mb-6"
+        >
+          <FolderOpen className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
+        </motion.div>
+        
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-2xl font-bold text-slate-900 dark:text-slate-100"
+        >
+          {getTranslation(language, 'projects.title')}
+        </motion.h2>
+      </div>
+
+      <div className="max-w-3xl mx-auto space-y-6">
+        {projectsItems.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+            className="bg-slate-50 dark:bg-slate-700/50 rounded-xl p-6 border border-slate-200/50 dark:border-slate-600/50"
+          >
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">
+              {project.title}
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              {project.description}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </motion.section>
   );
