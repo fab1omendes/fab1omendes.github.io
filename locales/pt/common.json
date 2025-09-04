@@ -1,0 +1,56 @@
+{
+  "title": "Bem-vindo",
+  "subtitle": "Aqui você encontra todas as informações",
+  "content": "Este é um exemplo de site multilíngue usando Next.js, TypeScript e TailwindCSS.",
+  "about": {
+    "title": "Fabio Mendes - Programador Full Stack com experiência em análise de dados e ETL",
+    "content": "Programador Full Stack com experiência em análise de dados e ETL. Graduado em Sistemas de Informação e cursando Engenharia da Computação. Pós graduado em Segurança da Informação. Experiência em análise de dados para gestão estratégica em Saúde Pública."
+  },
+  "experience": {
+    "title": "Experiência",
+    "items": [
+      {
+        "title": "Desenvolvedor Web na Empresa X (2020 - atual)",
+        "description": "Atuação sólida em TI durante 12 anos como Desenvolvedor Full Stack, Análise de Dados e suporte técnico de infra e sistemas. Combinando conhecimentos técnicos profundos com visão estratégica de negócios, permitindo entregar soluções que realmente impactam os resultados da empresa."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formação",
+    "items": [
+      "Graduação em Engenharia da Computação - Univesp SP, ago/2024 - cursando",
+      "Pós Graduação em Segurança da Informação - Unip, ago/2016 - jun/2019",
+      "Graduação em Sistemas de Informação - Unip, jan/2010 - jun/2014",
+      "Ensino Técnico em Informática - Etec Jorge Street, ago/2008 - jun/2010"
+    ]
+  },
+  "skills": {
+    "title": "Diferenciais",
+    "items": [
+      "Dev Full Stack Completo",
+      "Frontend, Backend, DevOps, Docker e Infraestrutura Linux",
+      "Análise de Dados",
+      "SQL Avançado, ETL's, automações, Python, Dash, Streamlit e Power BI"
+    ]
+  },
+  "projects": {
+    "title": "Projetos",
+    "items": [
+      {
+        "title": "DW-saude",
+        "description": "Projeto de Data-Warehouse, desenvolvido com Python, Dash, Tailwind CSS, HTML5, SQL e Docker. Data Warehouse com controle de acesso, que apresenta relatórios e gráficos dos dados de saúde do prontuário eletrônico e-SUS PEC, necessários estrategicamente para a gestão fazer o acompanhamento dos indicadores de saúde determinados pelo governo para o repasse financeiro, e também auxilia no fornecimento de insights e prospecção para realizar a melhoria da produção."
+      }
+    ]
+  },
+  "navigation": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "education": "Formação",
+    "skills": "Diferenciais",
+    "projects": "Projetos"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro"
+  }
+}

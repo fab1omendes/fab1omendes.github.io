@@ -1,0 +1,56 @@
+{
+  "title": "Welcome",
+  "subtitle": "Here you can find all the information",
+  "content": "This is an example of a multilingual website using Next.js, TypeScript and TailwindCSS.",
+  "about": {
+    "title": "Fabio Mendes - Full Stack Developer with experience in data analysis and ETL",
+    "content": "Full Stack Developer with experience in data analysis and ETL. Graduated in Information Systems and studying Computer Engineering. Post-graduate in Information Security. Experience in data analysis for strategic management in Public Health."
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "title": "Web Developer at Company X (2020 - present)",
+        "description": "Solid performance in IT for 12 years as Full Stack Developer, Data Analysis and technical support for infrastructure and systems. Combining deep technical knowledge with strategic business vision, allowing to deliver solutions that really impact the company's results."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      "Computer Engineering Degree - Univesp SP, aug/2024 - ongoing",
+      "Post-graduate in Information Security - Unip, aug/2016 - jun/2019",
+      "Information Systems Degree - Unip, jan/2010 - jun/2014",
+      "Technical Education in Informatics - Etec Jorge Street, aug/2008 - jun/2010"
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      "Complete Full Stack Dev",
+      "Frontend, Backend, DevOps, Docker and Linux Infrastructure",
+      "Data Analysis",
+      "Advanced SQL, ETLs, automations, Python, Dash, Streamlit and Power BI"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "DW-saude",
+        "description": "Data-Warehouse project, developed with Python, Dash, Tailwind CSS, HTML5, SQL and Docker. Data Warehouse with access control, which presents reports and graphs of health data from the e-SUS PEC electronic medical record, strategically necessary for management to monitor health indicators determined by the government for financial transfers, and also assists in providing insights and prospecting to improve production."
+      }
+    ]
+  },
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
