@@ -1,0 +1,51 @@
+{
+  "navitems": {
+    "about": "Sobre",
+    "stacks": "Principais Tecnologias",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "education": "Formação",
+    "skills": "Diferenciais"
+  },
+  "hero": {
+    "msg1": "Olá, eu sou",
+    "name": "Fábio Mendes",
+    "position": "Desenvolvedor Full Stack",
+    "summary": "Atuação sólida em TI durante 12 anos como Desenvolvedor Full Stack, Análise de Dados e suporte técnico de infra e sistemas. Combinando conhecimentos técnicos profundos com visão estratégica de negócios, permitindo entregar soluções que realmente impactam os resultados da empresa.",
+    "btproject": "Ver Projetos",
+    "btcontact": "Entre em Contato"
+},
+  "technologies": {
+    "title": "Tecnologias",
+    "subtitle": "Principais tecnologias e ferramentas que utilizo no desenvolvimento de soluções"
+},
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Alguns dos principais projetos que desenvolvi, demonstrando expertise em diferentes tecnologias",
+    "msgstacks": "Tecnologias utilizadas",
+    "btdemo": "Ver Demo",
+    "title-1": "DW Saúde",
+    "description-1": "Sistema completo de gestão para clínicas e hospitais com dashboard analítico, controle de pacientes e relatórios médicos. Desenvolvido com foco na experiência do usuário e performance.",
+    "stacks-1": "['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'TailwindCSS']",
+    "color-1": "from-blue-400/20 to-blue-600/20",
+    "borderColor-1": "border-blue-400/30",
+    "github-1": "https://github.com",
+    "demo-1": "https://example.com"
+},
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "Trajetória profissional com foco em desenvolvimento e análise de dados",
+    "title-1": "Desenvolvedor Web na Empresa X",
+    "period-1": "2020 - atual",
+    "description-1": "Atuação sólida em TI durante 12 anos como Desenvolvedor Full Stack, Análise de Dados e suporte técnico de infra e sistemas. Combinando conhecimentos técnicos profundos com visão estratégica de negócios, permitindo entregar soluções que realmente impactam os resultados da empresa.",
+    "highlight-1": "true",
+    "title-2": "Analista de Sistemas Sênior",
+    "period-2": "2018 - 2020",
+    "description-2": "Responsável pelo desenvolvimento e manutenção de sistemas web, análise de requisitos e implementação de soluções escaláveis. Liderança técnica em projetos de modernização de sistemas legados.",
+    "highlight-2": "false",
+    "title-3": "Desenvolvedor Full Stack",
+    "period-3": "2015 - 2018",
+    "description-3": "Desenvolvimento de aplicações web utilizando tecnologias modernas. Participação ativa em todas as fases do desenvolvimento, desde a concepção até a implantação e manutenção.",
+    "highlight-3": "false"
+  }  
+}

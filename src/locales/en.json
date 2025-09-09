@@ -1,0 +1,51 @@
+{
+  "navitems": {
+    "about": "About",
+    "stacks": "Main Technologies",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Key Skills"
+  },
+  "hero": {
+    "msg1": "Hello, I am",
+    "name": "Fábio Mendes",
+    "position": "Full Stack Developer",
+    "summary": "Solid IT experience over 12 years as a Full Stack Developer, Data Analysis, and technical support for infrastructure and systems. Combining deep technical knowledge with a strategic business vision, enabling the delivery of solutions that truly impact company results.",
+    "btproject": "View Projects",
+    "btcontact": "Get in Touch"
+  },
+    "technologies": {
+    "title": "Technologies",
+    "subtitle": "Main technologies and tools I use in the development of solutions"
+},
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of the main projects I developed, demonstrating expertise in different technologies",
+    "msgstacks": "Technologies used",
+    "btdemo": "View Demo",
+    "title-1": "DW Health",
+    "description-1": "Complete management system for clinics and hospitals with an analytical dashboard, patient control, and medical reports. Developed with a focus on user experience and performance.",
+    "stacks-1": "['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'TailwindCSS']",
+    "color-1": "from-blue-400/20 to-blue-600/20",
+    "borderColor-1": "border-blue-400/30",
+    "github-1": "https://github.com",
+    "demo-1": "https://example.com"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional journey focused on development and data analysis",
+    "title-1": "Web Developer at Company X",
+    "period-1": "2020 - present",
+    "description-1": "Solid IT experience over 12 years as a Full Stack Developer, Data Analysis, and technical support for infrastructure and systems. Combining deep technical knowledge with a strategic business vision, enabling the delivery of solutions that truly impact company results.",
+    "highlight-1": "true",
+    "title-2": "Senior Systems Analyst",
+    "period-2": "2018 - 2020",
+    "description-2": "Responsible for the development and maintenance of web systems, requirements analysis, and implementation of scalable solutions. Provided technical leadership in projects to modernize legacy systems.",
+    "highlight-2": "false",
+    "title-3": "Full Stack Developer",
+    "period-3": "2015 - 2018",
+    "description-3": "Development of web applications using modern technologies. Actively participated in all phases of development, from conception to deployment and maintenance.",
+    "highlight-3": "false"
+  }
+}
