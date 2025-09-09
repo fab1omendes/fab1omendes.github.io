@@ -11,7 +11,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
 
 
     return (
-        <section id="about" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <section id="aboutsection" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     {/* Profile Image */}
@@ -47,7 +47,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                         <div className="flex flex-col sm:flex-row gap-4 mb-8">
                             <Button 
                                 onClick={onScrollToProjects}
-                                className="bg-[#59b7d4] hover:bg-[#59b7d4]/90 text-white px-8 py-3"
+                                className="bg-[#59b7d4] hover:bg-[#59b7d4]/70 text-white px-8 py-3"
                                 size="lg"
                             >
                                 {t.hero.btproject}

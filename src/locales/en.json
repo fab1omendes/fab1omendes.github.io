@@ -11,41 +11,80 @@
     "msg1": "Hello, I am",
     "name": "Fábio Mendes",
     "position": "Full Stack Developer",
-    "summary": "Solid IT experience over 12 years as a Full Stack Developer, Data Analysis, and technical support for infrastructure and systems. Combining deep technical knowledge with a strategic business vision, enabling the delivery of solutions that truly impact company results.",
+    "summary": "Solid experience in IT for 12 years as a Full Stack Developer, Data Analyst, and technical support for infrastructure and systems. Combining deep technical knowledge with strategic business vision, enabling the delivery of solutions that truly impact company results.",
     "btproject": "View Projects",
-    "btcontact": "Get in Touch"
+    "btcontact": "Contact Me"
   },
-    "technologies": {
+  "technologies": {
     "title": "Technologies",
-    "subtitle": "Main technologies and tools I use in the development of solutions"
-},
+    "subtitle": "Main technologies and tools I use in solution development"
+  },
   "projects": {
     "title": "Projects",
     "subtitle": "Some of the main projects I developed, demonstrating expertise in different technologies",
     "msgstacks": "Technologies used",
     "btdemo": "View Demo",
-    "title-1": "DW Health",
-    "description-1": "Complete management system for clinics and hospitals with an analytical dashboard, patient control, and medical reports. Developed with a focus on user experience and performance.",
-    "stacks-1": "['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'TailwindCSS']",
-    "color-1": "from-blue-400/20 to-blue-600/20",
-    "borderColor-1": "border-blue-400/30",
-    "github-1": "https://github.com",
-    "demo-1": "https://example.com"
+    "list": [
+      {
+        "title": "DW Health",
+        "description": "Data-Warehouse project for presenting reports, charts, and insights from Primary Healthcare EHR data according to management demand",
+        "stacks": ["Python", "Dash", "TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker"],
+        "color": "from-blue-300/20 to-blue-600/20",
+        "borderColor": "border-blue-400/30",
+        "github": "https://github.com/fab1omendes/dwsaude",
+        "demo": "https://dwsaude.diadema.sp.gov.br"
+      },
+      {
+        "title": "BI Health OPPES",
+        "description": "Power BI dashboard for presenting production and financial data of the city’s Health Units",
+        "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
+        "color": "from-yellow-300/20 to-yellow-600/20",
+        "borderColor": "border-yellow-400/30",
+        "github": "",
+        "demo": ""
+      },
+      {
+        "title": "DiaSus",
+        "description": "Electronic Health Record (EHR) for use in municipal specialty clinics, with features such as appointment scheduling, clinical care, prescription and recipe issuance, standard form completion, and printing or sending by email/WhatsApp",
+        "stacks": ["Java", "Next.js", "NestJS", "TypeScript", "PostgreSQL", "Docker", "Kubernetes"],
+        "color": "from-green-300/20 to-green-600/20",
+        "borderColor": "border-green-400/30",
+        "github": "https://github.com/fab1omendes/diasus",
+        "demo": ""
+      },
+      {
+        "title": "Portfolio",
+        "description": "Landing page for presentation",
+        "stacks": ["Streamlit", "Python", "Power BI", "SQL", "NoSQL"],
+        "color": "from-purple-300/20 to-purple-600/20",
+        "borderColor": "border-purple-400/30",
+        "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+        "demo": "https://fab1omendes.vercel.app/"
+      }
+    ]
   },
-  "experience": {
+  "experiences": {
     "title": "Experience",
     "subtitle": "Professional journey focused on development and data analysis",
-    "title-1": "Web Developer at Company X",
-    "period-1": "2020 - present",
-    "description-1": "Solid IT experience over 12 years as a Full Stack Developer, Data Analysis, and technical support for infrastructure and systems. Combining deep technical knowledge with a strategic business vision, enabling the delivery of solutions that truly impact company results.",
-    "highlight-1": "true",
-    "title-2": "Senior Systems Analyst",
-    "period-2": "2018 - 2020",
-    "description-2": "Responsible for the development and maintenance of web systems, requirements analysis, and implementation of scalable solutions. Provided technical leadership in projects to modernize legacy systems.",
-    "highlight-2": "false",
-    "title-3": "Full Stack Developer",
-    "period-3": "2015 - 2018",
-    "description-3": "Development of web applications using modern technologies. Actively participated in all phases of development, from conception to deployment and maintenance.",
-    "highlight-3": "false"
+    "list": [
+      {
+        "title": "Data & Health Analyst at Diadema City Hall",
+        "period": "2022 - present",
+        "description": "Development of data warehouse solutions and dashboards for data analysis. Building ETLs. Task automation with AI agents. PostgreSQL database administration and Full Stack software development.",
+        "highlight": true
+      },
+      {
+        "title": "Systems Analyst at Diadema City Hall",
+        "period": "2011 - 2022",
+        "description": "Responsible for developing web systems for the hospital maintenance and engineering area, requirements analysis, and implementation of scalable solutions. Technical leadership in legacy system modernization projects.",
+        "highlight": false
+      },
+      {
+        "title": "IT Technician at Agaphone Telemática",
+        "period": "2011 - 2011",
+        "description": "Website development, email marketing. System installation and CCTV equipment configuration.",
+        "highlight": false
+      }
+    ]
   }
 }

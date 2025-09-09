@@ -1,7 +1,7 @@
 {
   "navitems": {
-    "about": "Acerca de mí",
-    "stacks": "Tecnologías Principales",
+    "about": "Sobre mí",
+    "stacks": "Principales Tecnologías",
     "projects": "Proyectos",
     "experience": "Experiencia",
     "education": "Formación",
@@ -11,41 +11,80 @@
     "msg1": "Hola, soy",
     "name": "Fábio Mendes",
     "position": "Desarrollador Full Stack",
-    "summary": "Sólida experiencia en TI durante 12 años como Desarrollador Full Stack, Análisis de Datos y soporte técnico de infraestructura y sistemas. Combinando conocimientos técnicos profundos con una visión estratégica del negocio, permitiendo entregar soluciones que realmente impactan en los resultados de la empresa.",
+    "summary": "Experiencia sólida en TI durante 12 años como Desarrollador Full Stack, Analista de Datos y soporte técnico de infraestructuras y sistemas. Combinando profundos conocimientos técnicos con visión estratégica de negocio, lo que permite entregar soluciones que realmente impactan en los resultados de la empresa.",
     "btproject": "Ver Proyectos",
-    "btcontact": "Ponerse en Contacto"
+    "btcontact": "Contactar"
   },
-    "technologies": {
+  "technologies": {
     "title": "Tecnologías",
     "subtitle": "Principales tecnologías y herramientas que utilizo en el desarrollo de soluciones"
-},
+  },
   "projects": {
     "title": "Proyectos",
     "subtitle": "Algunos de los principales proyectos que desarrollé, demostrando experiencia en diferentes tecnologías",
     "msgstacks": "Tecnologías utilizadas",
     "btdemo": "Ver Demo",
-    "title-1": "DW Salud",
-    "description-1": "Sistema completo de gestión para clínicas y hospitales con panel analítico, control de pacientes e informes médicos. Desarrollado con enfoque en la experiencia del usuario y el rendimiento.",
-    "stacks-1": "['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'TailwindCSS']",
-    "color-1": "from-blue-400/20 to-blue-600/20",
-    "borderColor-1": "border-blue-400/30",
-    "github-1": "https://github.com",
-    "demo-1": "https://example.com"
+    "list": [
+      {
+        "title": "DW Salud",
+        "description": "Proyecto de Data-Warehouse para la presentación de informes, gráficos e insights de los datos de Historia Clínica Electrónica de la Atención Primaria Municipal según la demanda de la gestión",
+        "stacks": ["Python", "Dash", "TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker"],
+        "color": "from-blue-300/20 to-blue-600/20",
+        "borderColor": "border-blue-400/30",
+        "github": "https://github.com/fab1omendes/dwsaude",
+        "demo": "https://dwsaude.diadema.sp.gov.br"
+      },
+      {
+        "title": "BI Salud OPPES",
+        "description": "Dashboard en Power BI para la presentación de datos de producción y financieros de las Unidades de Salud del Municipio",
+        "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
+        "color": "from-yellow-300/20 to-yellow-600/20",
+        "borderColor": "border-yellow-400/30",
+        "github": "",
+        "demo": ""
+      },
+      {
+        "title": "DiaSus",
+        "description": "Historia Clínica Electrónica del Paciente (HCE) para uso en los ambulatorios de referencia del municipio de Diadema, con funcionalidades como programación de citas, atención clínica, emisión de prescripciones y recetas, cumplimentación de formularios estándar e impresión o envío por email/WhatsApp",
+        "stacks": ["Java", "Next.js", "NestJS", "TypeScript", "PostgreSQL", "Docker", "Kubernetes"],
+        "color": "from-green-300/20 to-green-600/20",
+        "borderColor": "border-green-400/30",
+        "github": "https://github.com/fab1omendes/diasus",
+        "demo": ""
+      },
+      {
+        "title": "Portfolio",
+        "description": "Landing page de presentación",
+        "stacks": ["Streamlit", "Python", "Power BI", "SQL", "NoSQL"],
+        "color": "from-purple-300/20 to-purple-600/20",
+        "borderColor": "border-purple-400/30",
+        "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+        "demo": "https://fab1omendes.vercel.app/"
+      }
+    ]
   },
-  "experience": {
+  "experiences": {
     "title": "Experiencia",
-    "subtitle": "Trayectoria profesional enfocada en desarrollo y análisis de datos",
-    "title-1": "Desarrollador Web en la Empresa X",
-    "period-1": "2020 - actual",
-    "description-1": "Sólida experiencia en TI durante 12 años como Desarrollador Full Stack, Análisis de Datos y soporte técnico de infraestructura y sistemas. Combinando conocimientos técnicos profundos con una visión estratégica del negocio, permitiendo entregar soluciones que realmente impactan en los resultados de la empresa.",
-    "highlight-1": "true",
-    "title-2": "Analista de Sistemas Senior",
-    "period-2": "2018 - 2020",
-    "description-2": "Responsable del desarrollo y mantenimiento de sistemas web, análisis de requisitos e implementación de soluciones escalables. Liderazgo técnico en proyectos de modernización de sistemas heredados.",
-    "highlight-2": "false",
-    "title-3": "Desarrollador Full Stack",
-    "period-3": "2015 - 2018",
-    "description-3": "Desarrollo de aplicaciones web utilizando tecnologías modernas. Participación activa en todas las fases del desarrollo, desde la concepción hasta la implementación y el mantenimiento.",
-    "highlight-3": "false"
+    "subtitle": "Trayectoria profesional centrada en desarrollo y análisis de datos",
+    "list": [
+      {
+        "title": "Analista de Datos y Salud en el Ayuntamiento de Diadema",
+        "period": "2022 - actual",
+        "description": "Desarrollo de soluciones de data warehouse y dashboards para análisis de datos. Construcción de ETLs. Automatización de tareas con Agentes de IA. Administración de base de datos PostgreSQL y desarrollo de software Full Stack.",
+        "highlight": true
+      },
+      {
+        "title": "Analista de Sistemas en el Ayuntamiento de Diadema",
+        "period": "2011 - 2022",
+        "description": "Responsable del desarrollo de sistemas web para el área de mantenimiento e ingeniería hospitalaria, análisis de requisitos e implementación de soluciones escalables. Liderazgo técnico en proyectos de modernización de sistemas heredados.",
+        "highlight": false
+      },
+      {
+        "title": "Técnico Informático en Agaphone Telemática",
+        "period": "2011 - 2011",
+        "description": "Desarrollo de sitios web, email marketing. Instalación de sistemas y configuración de equipos de CCTV.",
+        "highlight": false
+      }
+    ]
   }
 }

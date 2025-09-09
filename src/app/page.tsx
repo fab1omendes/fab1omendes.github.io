@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import { HeroSection } from '@/components/HeroSection';
 import { TechStacksSection } from '@/components/TechStacksSection';
-
+import { ProjectsSection } from '@/components/ProjectsSection';
+import { ExperienceSection } from '@/components/ExperienceSection';
 
 import pt from "@/locales/pt.json";
 import en from "@/locales/en.json";
@@ -57,7 +58,7 @@ export default function Home() {
     }
   };
 
-  const scrollToProjects = () => scrollToSection('projetos');
+  const scrollToProjects = () => scrollToSection('projectsection');
   const scrollToContact = () => scrollToSection('footer');
 
   return (
@@ -76,6 +77,13 @@ export default function Home() {
 
         {/* TechStacksSection */}
         <TechStacksSection t={t}/>
+
+        {/* ProjectsSection */}
+        <ProjectsSection t={t}/>
+
+        {/* Experience */}
+        <ExperienceSection t={t} />
+
 
       </main>
 

@@ -1,7 +1,9 @@
+// argument for translations
 type LanguageProps = {
   t: typeof import("@/locales/pt.json");
 };
 
+//Tech list
 const techStacks = [
   { name: 'Docker', icon: '🐳', color: '#2496ED' },
   { name: 'HTML', icon: '🌐', color: '#E34F26' },
@@ -20,10 +22,11 @@ const techStacks = [
   { name: 'NoSQL', icon: '📋', color: '#4DB33D' },
   { name: 'Power BI', icon: '📈', color: '#F2C811' },
 ];
+
 export function TechStacksSection({t}: LanguageProps){
 
     return (
-        <section id="technologies" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <section id="techsection" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl lg:text-4xl mb-4 text-foreground">

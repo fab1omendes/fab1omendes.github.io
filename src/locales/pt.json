@@ -19,33 +19,72 @@
     "title": "Tecnologias",
     "subtitle": "Principais tecnologias e ferramentas que utilizo no desenvolvimento de soluções"
 },
-  "projects": {
-    "title": "Projetos",
-    "subtitle": "Alguns dos principais projetos que desenvolvi, demonstrando expertise em diferentes tecnologias",
-    "msgstacks": "Tecnologias utilizadas",
-    "btdemo": "Ver Demo",
-    "title-1": "DW Saúde",
-    "description-1": "Sistema completo de gestão para clínicas e hospitais com dashboard analítico, controle de pacientes e relatórios médicos. Desenvolvido com foco na experiência do usuário e performance.",
-    "stacks-1": "['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'TailwindCSS']",
-    "color-1": "from-blue-400/20 to-blue-600/20",
-    "borderColor-1": "border-blue-400/30",
-    "github-1": "https://github.com",
-    "demo-1": "https://example.com"
+ "projects": {
+  "title": "Projetos",
+  "subtitle": "Alguns dos principais projetos que desenvolvi, demonstrando expertise em diferentes tecnologias",
+  "msgstacks": "Tecnologias utilizadas",
+  "btdemo": "Ver Demo",
+  "list": [
+    {
+      "title": "DW Saúde",
+      "description": "Projeto de Data-Warehouse para apresentação de relatórios, gráficos e insights dos dados de Saúde do PEP da Atenção Básica Municipal de acordo com a demanda do gestor",
+      "stacks": ["Python", "Dash", "TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker"],
+      "color": "from-blue-300/20 to-blue-600/20",
+      "borderColor": "border-blue-400/30",
+      "github": "https://github.com/fab1omendes/dwsaude",
+      "demo": "https://dwsaude.diadema.sp.gov.br"
+    },
+    {
+      "title": "BI Saudde OPPES",
+      "description": "Dashboard em Power Bi para apresentação de dados de produção e financeiro das Unidades de Saúde do Município",
+      "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
+      "color": "from-yellow-300/20 to-yellow-600/20",
+      "borderColor": "border-yellow-400/30",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "title": "DiaSus",
+      "description": "Prontuário Eletrônico do Paciente (PEP) para uso nos ambulatórios de referência do município de Diadema, com funcionalidades como agendamento de consultas, atendimento clínico, emissão de prescrições e receitas, preenchimento de formulários padrão e impressão de fichas ou envio por email/whatsApp",
+      "stacks": ["Java", "Next.js", "NestJS", "TypeScript", "PostgreSQL", "Docker", "Kubernetes"],
+      "color": "from-green-300/20 to-green-600/20",
+      "borderColor": "border-green-400/30",
+      "github": "https://github.com/fab1omendes/diasus",
+      "demo": ""
+    },
+    {
+      "title": "Portfolio",
+      "description": "Landpage to apresentation ",
+      "stacks": ["Streamlit", "Python", "Power BI", "SQL", "NoSQL"],
+      "color": "from-purple-300/20 to-purple-600/20",
+      "borderColor": "border-purple-400/30",
+      "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+      "demo": "https://fab1omendes.vercel.app/"
+    }
+  ]
 },
-  "experience": {
+  "experiences": {
     "title": "Experiência",
     "subtitle": "Trajetória profissional com foco em desenvolvimento e análise de dados",
-    "title-1": "Desenvolvedor Web na Empresa X",
-    "period-1": "2020 - atual",
-    "description-1": "Atuação sólida em TI durante 12 anos como Desenvolvedor Full Stack, Análise de Dados e suporte técnico de infra e sistemas. Combinando conhecimentos técnicos profundos com visão estratégica de negócios, permitindo entregar soluções que realmente impactam os resultados da empresa.",
-    "highlight-1": "true",
-    "title-2": "Analista de Sistemas Sênior",
-    "period-2": "2018 - 2020",
-    "description-2": "Responsável pelo desenvolvimento e manutenção de sistemas web, análise de requisitos e implementação de soluções escaláveis. Liderança técnica em projetos de modernização de sistemas legados.",
-    "highlight-2": "false",
-    "title-3": "Desenvolvedor Full Stack",
-    "period-3": "2015 - 2018",
-    "description-3": "Desenvolvimento de aplicações web utilizando tecnologias modernas. Participação ativa em todas as fases do desenvolvimento, desde a concepção até a implantação e manutenção.",
-    "highlight-3": "false"
+    "list": [
+      {
+        "title": "Analista de Dados e Saúde na Prefeitura de Diadema",
+        "period": "2022 - atual",
+        "description": "Desenvolvimento de soluções de data-wharehouse e dashboards para análise de dados. Construção de Etl's. Automatização de tarefas com Agentes de IA. Administração de Banco de Dados PostgreSQL e desenvolvimento de software Full Stack",
+        "highlight": true
+      },
+      {
+        "title": "Analista de Sistemas na Prefeitura de Diadema",
+        "period": "2011 - 2022",
+        "description": "Responsável pelo desenvolvimento de sistemas web para área de manutenção e engenharia hospitalar, análise de requisitos e implementação de soluções escaláveis. Liderança técnica em projetos de modernização de sistemas legados.",
+        "highlight": false
+      },
+      {
+        "title": "Tecnico de Informática na Agaphone Telemática",
+        "period": "2011 - 2011",
+        "description": "Desenvolvimento de websites, email-marketing. Instalação de sistemas e configuração de equipamentos de CFTV",
+        "highlight": false
+      }
+    ]
   }  
 }
