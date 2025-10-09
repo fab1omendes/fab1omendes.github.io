@@ -75,27 +75,28 @@ export default function Home() {
       <div className='fixed top-4 right-4 flex items-center gap-2 z-50'>
 
         {/*Tema */}
-        <Button variant="outline" size="sm" onClick={toggleDarkMode}>
-          {darkMode ? <Sun className="w-4 h-4 text-yellow-400" /> : <Moon className="w-4 h-4 text-gray-700" />}
+        <Button variant="ghost" size="sm" onClick={toggleDarkMode}
+        className="flex items-center justify-center transition-colors duration-300">
+          {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-4 h-4 text-gray-700" />}
         </Button>
 
         {/*Idioma */}
-        <Button variant={lang === "pt" ? "default" : "outline"}
+        <Button variant={lang === "pt" ? "default" : "ghost"}
         size="sm"
         onClick={() => switchLang("pt")}
-        className='flex items-center justify-center'>
+        className='flex items-center justify-center transition-colors duration-300'>
           <BR title='Português' className='w-5 h-5 rounded-sm'></BR>
         </Button>
-        <Button variant={lang === "en" ? "default" : "outline"}
+        <Button variant={lang === "en" ? "default" : "ghost"}
         size="sm"
         onClick={() => switchLang("en")}
-        className='flex items-center justify-center'>
+        className='flex items-center justify-center transition-colors duration-300'>
           <GB title='English' className='w-5 h-5 rounded-sm'></GB>
         </Button>
-        <Button variant={lang === "es" ? "default" : "outline"}
+        <Button variant={lang === "es" ? "default" : "ghost"}
         size="sm"
         onClick={() => switchLang("es")}
-        className='flex items-center justify-center'>
+        className='flex items-center justify-center transition-colors duration-300'>
           <ES title='Español' className='w-5 h-5 rounded-sm'></ES>
         </Button>
 
