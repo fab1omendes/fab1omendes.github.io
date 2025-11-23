@@ -2,27 +2,30 @@
 
 import { useState, useEffect } from 'react';
 
-import { Button } from '@/components/ui/button'
-import { Sun, Moon } from 'lucide-react';
-import "country-flag-icons/react/3x2";
-import { BR, ES, GB } from "country-flag-icons/react/3x2";
-
+import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
 import { TechStacksSection } from '@/components/TechStacksSection';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { ExperienceSection } from '@/components/ExperienceSection';
+import { EducationSection } from '@/components/EducationSection';
+import { SkillsSection } from '@/components/SkillsSection';
 
-import pt from "@/locales/pt.json";
-import en from "@/locales/en.json";
-import es from "@/locales/es.json";
+import type { Translation } from "@/locales";
+import { translations } from "@/locales";
 
-const translations = { pt, en, es };
+
+
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [lang, setLang] = useState<"pt" | "en" | "es">("pt");
 
-  const t = translations[lang];
+
+  const t: Translation = translations[lang];
+
+
 
   //Initialize dark mode from localStorage
   useEffect(() => {
@@ -34,10 +37,10 @@ export default function Home() {
         // Check system preference
         setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
       }
-    } catch (error){
-        console.log('Error loading dark mode preference:', error);
+    } catch (error) {
+      console.log('Error loading dark mode preference:', error);
     }
-}, []);
+  }, []);
 
   // Apply dark mode class to document
   useEffect(() => {
@@ -66,47 +69,23 @@ export default function Home() {
     }
   };
 
-  const scrollToProjects = () => scrollToSection('projectsection');
-  const scrollToContact = () => scrollToSection('footer');
+  const scrollToProjects = () => scrollToSection('projectSection');
+  const scrollToContact = () => scrollToSection('aboutSection');
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navbar */}
-      <div className='fixed top-4 right-4 flex items-center gap-2 z-50'>
-
-        {/*Tema */}
-        <Button variant="ghost" size="sm" onClick={toggleDarkMode}
-        className="flex items-center justify-center transition-colors duration-300">
-          {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-4 h-4 text-gray-700" />}
-        </Button>
-
-        {/*Idioma */}
-        <Button variant={lang === "pt" ? "default" : "ghost"}
-        size="sm"
-        onClick={() => switchLang("pt")}
-        className='flex items-center justify-center transition-colors duration-300'>
-          <BR title='Português' className='w-5 h-5 rounded-sm'></BR>
-        </Button>
-        <Button variant={lang === "en" ? "default" : "ghost"}
-        size="sm"
-        onClick={() => switchLang("en")}
-        className='flex items-center justify-center transition-colors duration-300'>
-          <GB title='English' className='w-5 h-5 rounded-sm'></GB>
-        </Button>
-        <Button variant={lang === "es" ? "default" : "ghost"}
-        size="sm"
-        onClick={() => switchLang("es")}
-        className='flex items-center justify-center transition-colors duration-300'>
-          <ES title='Español' className='w-5 h-5 rounded-sm'></ES>
-        </Button>
-
-      </div>
-
-      {/*<Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>*/}
+      <Navbar
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+        lang={lang}
+        switchLang={switchLang}
+        t={t}
+      />
 
       {/* Main Content */}
       <main>
-        
+
         {/* Hero Section */}
         <HeroSection t={t}
           onScrollToProjects={scrollToProjects}
@@ -114,13 +93,20 @@ export default function Home() {
         />
 
         {/* TechStacksSection */}
-        <TechStacksSection t={t}/>
+        <TechStacksSection t={t} />
 
         {/* ProjectsSection */}
-        <ProjectsSection t={t}/>
+        <ProjectsSection t={t} />
 
         {/* Experience */}
         <ExperienceSection t={t} />
+
+        {/* Education */}
+        <EducationSection t={t} />
+
+        {/* Skills */}
+        <SkillsSection t={t} />
+
 
 
       </main>

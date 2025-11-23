@@ -1,39 +1,36 @@
-// argument for translations
-type LanguageProps = {
-  t: typeof import("@/locales/pt.json");
-};
+import { LanguageProps } from "@/types/LanguageProps";
 
 //Tech list
 const techStacks = [
-  { name: 'Docker', icon: '🐳', color: '#2496ED' },
-  { name: 'HTML', icon: '🌐', color: '#E34F26' },
-  { name: 'CSS', icon: '🎨', color: '#1572B6' },
-  { name: 'TailwindCSS', icon: '💨', color: '#06B6D4' },
-  { name: 'TypeScript', icon: '📘', color: '#3178C6' },
-  { name: 'JavaScript', icon: '📜', color: '#F7DF1E' },
-  { name: 'ReactJS', icon: '⚛️', color: '#61DAFB' },
-  { name: 'NextJS', icon: '▲', color: '#000000' },
-  { name: 'NodeJS', icon: '🟢', color: '#339933' },
-  { name: 'Python', icon: '🐍', color: '#3776AB' },
-  { name: 'Dash', icon: '📊', color: '#119DFF' },
-  { name: 'Streamlit', icon: '🚀', color: '#FF4B4B' },
-  { name: 'SQL', icon: '🗄️', color: '#4479A1' },
-  { name: 'PostgreSQL', icon: '🐘', color: '#336791' },
-  { name: 'NoSQL', icon: '📋', color: '#4DB33D' },
-  { name: 'Power BI', icon: '📈', color: '#F2C811' },
+    { name: 'Docker', icon: '🐳', color: '#2496ED' },
+    { name: 'HTML', icon: '🌐', color: '#E34F26' },
+    { name: 'CSS', icon: '🎨', color: '#1572B6' },
+    { name: 'TailwindCSS', icon: '💨', color: '#06B6D4' },
+    { name: 'TypeScript', icon: '📘', color: '#3178C6' },
+    { name: 'JavaScript', icon: '📜', color: '#F7DF1E' },
+    { name: 'ReactJS', icon: '⚛️', color: '#61DAFB' },
+    { name: 'Next,js', icon: '▲', color: '#000000' },
+    { name: 'NodeJS', icon: '🟢', color: '#339933' },
+    { name: 'Python', icon: '🐍', color: '#3776AB' },
+    { name: 'Dash', icon: '📊', color: '#119DFF' },
+    { name: 'Streamlit', icon: '🚀', color: '#FF4B4B' },
+    { name: 'SQL', icon: '🗄️', color: '#4479A1' },
+    { name: 'PostgreSQL', icon: '🐘', color: '#336791' },
+    { name: 'NoSQL', icon: '📋', color: '#4DB33D' },
+    { name: 'Power BI', icon: '📈', color: '#F2C811' },
 ];
 
-export function TechStacksSection({t}: LanguageProps){
+export function TechStacksSection({ t }: LanguageProps) {
 
     return (
-        <section id="techsection" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <section id="techSection" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl lg:text-4xl mb-4 text-foreground">
                         {t.technologies.title}
                     </h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                        {t.technologies.subtitle}  
+                        {t.technologies.subtitle}
                     </p>
                 </div>
 

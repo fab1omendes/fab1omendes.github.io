@@ -3,16 +3,13 @@ import { Button } from "@/components/ui/button"
 import { Github, ExternalLink } from "lucide-react";
 
 
-// argument for translations
-type LanguageProps = {
-    t: typeof import("@/locales/pt.json") 
-};
+import { LanguageProps } from "@/types/LanguageProps";
 
 export function ProjectsSection({ t }: LanguageProps) {
     const project = t.projects.list; // array from projects of JSON
 
     return (
-        <section id="projectsection" className="py-16 px-4 sm:px-6 lg:px-8">
+        <section id="projectSection" className="py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Div Title e subtitle */}
                 <div className="text-center mb-12">
@@ -37,7 +34,7 @@ export function ProjectsSection({ t }: LanguageProps) {
                                         <h3 className="text-2xl lg:text-3xl mb-4 text-foreground">
                                             {project.title}
                                         </h3>
-                                        
+
                                         <p className="text-muted-foreground mb-6 leading-relaxed">
                                             {project.description}
                                         </p>
@@ -78,7 +75,7 @@ export function ProjectsSection({ t }: LanguageProps) {
                                                 asChild
                                             >
                                                 <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                                                    <ExternalLink className="h-4 w-4 mr-2"/>
+                                                    <ExternalLink className="h-4 w-4 mr-2" />
                                                     {t.projects.btdemo}
                                                 </a>
                                             </Button>
@@ -102,6 +99,6 @@ export function ProjectsSection({ t }: LanguageProps) {
                     }
                 </div>
             </div>
-        </section>   
+        </section>
     )
 }

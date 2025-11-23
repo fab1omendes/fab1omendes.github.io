@@ -1,17 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from 'lucide-react';
+import type { Translation } from "@/locales";
 
 interface HeroSectionProps {
     onScrollToProjects: () => void;
     onScrollToContact: () => void;
-    t: typeof import("@/locales/pt.json"); // argument for translations
+    t: Translation;
 }
 
 export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSectionProps) {
 
 
     return (
-        <section id="aboutsection" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <section id="aboutSection" className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                     {/* Profile Image */}
@@ -19,7 +20,12 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                         <div className="relative">
                             <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-[#59B7D4] to-[#E4AAA9] p-2">
                                 <div className="w-full h-full rounded-full overflow-hidden bg-gray-300/50 flex items-center justify-center">
-                                    <div className="text-6xl">🙋</div>
+                                    <div className="w-full">
+                                        <img
+                                            src="https://github.com/fab1omendes.png"
+                                            alt="Profile Image"
+                                        ></img>
+                                    </div>
                                 </div>
                             </div>
 
@@ -40,12 +46,12 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                         <h2 className="text-2xl lg:text-3xl text-foreground mb-6">{t.hero.position}</h2>
 
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-                          {t.hero.summary}  
+                            {t.hero.summary}
                         </p>
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                            <Button 
+                            <Button
                                 onClick={onScrollToProjects}
                                 className="bg-[#59b7d4] hover:bg-[#59b7d4]/70 text-white px-8 py-3"
                                 size="lg"
@@ -64,7 +70,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
 
                         {/* Social Links */}
                         <div className="flex justify-center lg:justify-start space-x-6">
-                            <a 
+                            <a
                                 href="https://github.com/fab1omendes"
                                 className="text-muted-foreground hover:text-[#59B7D4] transition-colors"
                                 aria-label="GitHub"
@@ -72,7 +78,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                             >
                                 <Github className="h-6 w-6"></Github>
                             </a>
-                            <a 
+                            <a
                                 href="https://www.linkedin.com/in/fab1omendes/"
                                 className="text-muted-foreground hover:text-[#59B7D4] transition-colors"
                                 aria-label="LinkedIn"
@@ -80,7 +86,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                             >
                                 <Linkedin className="h-6 w-6"></Linkedin>
                             </a>
-                            <a 
+                            <a
                                 href="mailto:fabiogomendes@gmail.com"
                                 className="text-muted-foreground hover:text-[#59B7D4] transition-colors"
                                 aria-label="Email"
@@ -88,7 +94,7 @@ export function HeroSection({ onScrollToProjects, onScrollToContact, t }: HeroSe
                             >
                                 <Mail className="h-6 w-6"></Mail>
                             </a>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>

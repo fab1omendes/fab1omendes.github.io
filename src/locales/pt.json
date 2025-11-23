@@ -14,55 +14,80 @@
     "summary": "Atuação sólida em TI durante 12 anos como Desenvolvedor Full Stack, Análise de Dados e suporte técnico de infra e sistemas. Combinando conhecimentos técnicos profundos com visão estratégica de negócios, permitindo entregar soluções que realmente impactam os resultados da empresa.",
     "btproject": "Ver Projetos",
     "btcontact": "Entre em Contato"
-},
+  },
   "technologies": {
     "title": "Tecnologias",
     "subtitle": "Principais tecnologias e ferramentas que utilizo no desenvolvimento de soluções"
-},
- "projects": {
-  "title": "Projetos",
-  "subtitle": "Alguns dos principais projetos que desenvolvi, demonstrando expertise em diferentes tecnologias",
-  "msgstacks": "Tecnologias utilizadas",
-  "btdemo": "Ver Demo",
-  "list": [
-    {
-      "title": "DW Saúde",
-      "description": "Projeto de Data-Warehouse para apresentação de relatórios, gráficos e insights dos dados de Saúde do PEP da Atenção Básica Municipal de acordo com a demanda do gestor",
-      "stacks": ["Python", "Dash", "TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker"],
-      "color": "from-blue-300/20 to-blue-600/20",
-      "borderColor": "border-blue-400/30",
-      "github": "https://github.com/fab1omendes/dwsaude",
-      "demo": "https://dwsaude.diadema.sp.gov.br"
-    },
-    {
-      "title": "BI Saudde OPPES",
-      "description": "Dashboard em Power Bi para apresentação de dados de produção e financeiro das Unidades de Saúde do Município",
-      "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
-      "color": "from-yellow-300/20 to-yellow-600/20",
-      "borderColor": "border-yellow-400/30",
-      "github": "",
-      "demo": ""
-    },
-    {
-      "title": "DiaSus",
-      "description": "Prontuário Eletrônico do Paciente (PEP) para uso nos ambulatórios de referência do município de Diadema, com funcionalidades como agendamento de consultas, atendimento clínico, emissão de prescrições e receitas, preenchimento de formulários padrão e impressão de fichas ou envio por email/whatsApp",
-      "stacks": ["Java", "Next.js", "NestJS", "TypeScript", "PostgreSQL", "Docker", "Kubernetes"],
-      "color": "from-green-300/20 to-green-600/20",
-      "borderColor": "border-green-400/30",
-      "github": "https://github.com/fab1omendes/diasus",
-      "demo": ""
-    },
-    {
-      "title": "Portfolio",
-      "description": "Landpage to apresentation ",
-      "stacks": ["Streamlit", "Python", "Power BI", "SQL", "NoSQL"],
-      "color": "from-purple-300/20 to-purple-600/20",
-      "borderColor": "border-purple-400/30",
-      "github": "https://github.com/fab1omendes/fab1omendes.github.io",
-      "demo": "https://fab1omendes.vercel.app/"
-    }
-  ]
-},
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Alguns dos principais projetos que desenvolvi, demonstrando expertise em diferentes tecnologias",
+    "msgstacks": "Tecnologias utilizadas",
+    "btdemo": "Ver Demo",
+    "list": [
+      {
+        "title": "DW Saúde",
+        "description": "Projeto de Data-Warehouse para apresentação de relatórios, gráficos e insights dos dados de Saúde do PEP da Atenção Básica Municipal de acordo com a demanda do gestor",
+        "stacks": [
+          "Python",
+          "Dash",
+          "TypeScript",
+          "Next,js",
+          "TailwindCSS",
+          "PostgreSQL",
+          "Docker"
+        ],
+        "color": "from-blue-300/20 to-blue-600/20",
+        "borderColor": "border-blue-400/30",
+        "github": "https://github.com/fab1omendes/dwsaude",
+        "demo": "https://dwsaude.diadema.sp.gov.br"
+      },
+      {
+        "title": "BI Saudde OPPES",
+        "description": "Dashboard em Power Bi para apresentação de dados de produção e financeiro das Unidades de Saúde do Município",
+        "stacks": [
+          "Power BI",
+          "Python",
+          "PostgreSQL",
+          "MySql"
+        ],
+        "color": "from-yellow-300/20 to-yellow-600/20",
+        "borderColor": "border-yellow-400/30",
+        "github": "",
+        "demo": ""
+      },
+      {
+        "title": "DiaSus",
+        "description": "Prontuário Eletrônico do Paciente (PEP) para uso nos ambulatórios de referência do município de Diadema, com funcionalidades como agendamento de consultas, atendimento clínico, emissão de prescrições e receitas, preenchimento de formulários padrão e impressão de fichas ou envio por email/whatsApp",
+        "stacks": [
+          "Java",
+          "Next,js",
+          "NestJS",
+          "TypeScript",
+          "PostgreSQL",
+          "Docker",
+          "Kubernetes"
+        ],
+        "color": "from-green-300/20 to-green-600/20",
+        "borderColor": "border-green-400/30",
+        "github": "https://github.com/fab1omendes/diasus",
+        "demo": ""
+      },
+      {
+        "title": "Portfolio",
+        "description": "Landpage to apresentation ",
+        "stacks": [
+          "TypeScript",
+          "Next,js",
+          "TailwindCSS"
+        ],
+        "color": "from-purple-300/20 to-purple-600/20",
+        "borderColor": "border-purple-400/30",
+        "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+        "demo": "https://fab1omendes.vercel.app/"
+      }
+    ]
+  },
   "experiences": {
     "title": "Experiência",
     "subtitle": "Trajetória profissional com foco em desenvolvimento e análise de dados",
@@ -86,5 +111,91 @@
         "highlight": false
       }
     ]
-  }  
+  },
+  "education": {
+    "title": "Formação Acadêmica",
+    "subtitle": "Formação acadêmica sólida com foco em tecnologia e segurança da informação",
+    "additionalInf": "Formação contínua em tecnologias emergentes e melhores práticas do setor",
+    "list": [
+      {
+        "title": "Bacharelado em Engenharia da Computação",
+        "institution": "Universidade Virtual do Estado de São Paulo (UNIVESP)",
+        "period": "ago/2024 - cursando",
+        "highlight": true
+      },
+      {
+        "title": "Pós Graduação em Segurança da Informação",
+        "institution": "Universidade Paulista (UNIP)",
+        "period": "2019 - 2021",
+        "highlight": false
+      },
+      {
+        "title": "Bacharelado em Sistemas de Informação",
+        "institution": "Universidade Paulista (UNIP)",
+        "period": "2008 - 2014",
+        "highlight": false
+      },
+      {
+        "title": "Curso Técnico em Informática",
+        "institution": "ETEC de São Caetano do Sul",
+        "period": "2006 - 2007",
+        "highlight": false
+      }
+    ]
+  },
+  "skills": {
+    "title": "Diferenciais",
+    "subtitle": "Combinação única de habilidades técnicas que me permite entregar soluções completas",
+    "additionalInf": "12+ anos de experiência em transformação digital",
+    "list": [
+      {
+        "icon": "🚀",
+        "color": "from-[#59B7D4]/20 to-[#59B7D4]/5",
+        "title": "Dev Full Stack Completo",
+        "subtitle": "Desenvolvimento end-to-end com domínio completo do ciclo de desenvolvimento",
+        "items": [
+          "Frontend moderno com React/Next.js",
+          "Backend robusto com Node.js/Python",
+          "APIs RESTful e GraphQL",
+          "Arquitetura de microserviços"
+        ]
+      },
+      {
+        "icon": "⚙️",
+        "color": "from-[#E4AAA9]/20 to-[#E4AAA9]/5",
+        "title": "Frontend, Backend, DevOps, Docker e Infraestrutura Linux",
+        "subtitle": "Expertise completa em infraestrutura e operações",
+        "items": [
+          "Containerização com Docker",
+          "Orquestração de containers",
+          "CI/CD pipelines",
+          "Administração Linux avançada"
+        ]
+      },
+      {
+        "icon": "📊",
+        "color": "from-purple-400/20 to-purple-400/5",
+        "title": "Análise de Dados",
+        "subtitle": "Transformação de dados em insights estratégicos para negócios",
+        "items": [
+          "Modelagem e visualização de dados",
+          "Machine Learning aplicado",
+          "Dashboards interativos",
+          "Análise preditiva"
+        ]
+      },
+      {
+        "icon": "🔧",
+        "color": "from-green-400/20 to-green-400/5",
+        "title": "SQL Avançado, ETL's, automações, Python, Dash, Streamlit e Power BI",
+        "subtitle": "Stack completa para análise e processamento de dados",
+        "items": [
+          "Queries SQL complexas e otimização",
+          "Pipelines ETL automatizados",
+          "Dashboards em Python (Dash/Streamlit/Metabase)",
+          "Relatórios executivos em Power BI"
+        ]
+      }
+    ]
+  }
 }
