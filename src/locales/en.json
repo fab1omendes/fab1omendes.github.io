@@ -45,12 +45,7 @@
       {
         "title": "BI Health OPPES",
         "description": "Power BI dashboard presenting production and financial metrics of municipal Health Units.",
-        "stacks": [
-          "Power BI",
-          "Python",
-          "PostgreSQL",
-          "MySql"
-        ],
+        "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
         "color": "from-yellow-300/20 to-yellow-600/20",
         "borderColor": "border-yellow-400/30",
         "github": "",
@@ -76,11 +71,7 @@
       {
         "title": "Portfolio",
         "description": "Landing page for personal presentation.",
-        "stacks": [
-          "TypeScript",
-          "Next.js",
-          "TailwindCSS"
-        ],
+        "stacks": ["TypeScript", "Next.js", "TailwindCSS"],
         "color": "from-purple-300/20 to-purple-600/20",
         "borderColor": "border-purple-400/30",
         "github": "https://github.com/fab1omendes/fab1omendes.github.io",
@@ -154,8 +145,8 @@
         "title": "Complete Full Stack Developer",
         "subtitle": "End-to-end development with full mastery of the development cycle",
         "items": [
-          "Modern frontend with React/Next.js",
-          "Robust backend with Node.js/Python",
+          "Modern frontend with React/Next.js/Angular",
+          "Robust backend with Java/Node.js/NestJS/Python",
           "RESTful and GraphQL APIs",
           "Microservices architecture"
         ]
@@ -197,5 +188,12 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "title": "Fabio Mendes",
+    "subtitle": "Full Stack Developer & Data Analyst",
+    "copyright": "© 2025 Fábio Mendes. All rights reserved.",
+    "btmail": "Mail",
+    "bthome": "Back to top"
   }
 }

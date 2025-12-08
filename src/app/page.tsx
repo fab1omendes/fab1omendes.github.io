@@ -1,58 +1,51 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import { Navbar } from '@/components/Navbar';
-import { HeroSection } from '@/components/HeroSection';
-import { TechStacksSection } from '@/components/TechStacksSection';
-import { ProjectsSection } from '@/components/ProjectsSection';
-import { ExperienceSection } from '@/components/ExperienceSection';
-import { EducationSection } from '@/components/EducationSection';
-import { SkillsSection } from '@/components/SkillsSection';
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { TechStacksSection } from "@/components/TechStacksSection";
+import { ProjectsSection } from "@/components/ProjectsSection";
+import { ExperienceSection } from "@/components/ExperienceSection";
+import { EducationSection } from "@/components/EducationSection";
+import { SkillsSection } from "@/components/SkillsSection";
+import { FooterSection } from "@/components/Footer";
 
 import type { Translation } from "@/locales";
 import { translations } from "@/locales";
-
-
-
-
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [lang, setLang] = useState<"pt" | "en" | "es">("pt");
 
-
   const t: Translation = translations[lang];
 
-
-
-  //Initialize dark mode from localStorage
+  //Inicializar modo dark a partir do localStorage ou preferencia do sistema
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('darkMode');
+      const saved = localStorage.getItem("darkMode");
       if (saved) {
         setDarkMode(JSON.parse(saved));
       } else {
         // Check system preference
-        setDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+        setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
       }
     } catch (error) {
-      console.log('Error loading dark mode preference:', error);
+      console.log("Error loading dark mode preference:", error);
     }
   }, []);
 
-  // Apply dark mode class to document
+  // Aplicar a classe dark mode ao documento
   useEffect(() => {
     try {
       if (darkMode) {
-        document.documentElement.classList.add('dark');
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove("dark");
       }
-      localStorage.setItem('darkMode', JSON.stringify(darkMode));
+      localStorage.setItem("darkMode", JSON.stringify(darkMode));
     } catch (error) {
-      console.log('Error saving dark mode preference:', error);
+      console.log("Error saving dark mode preference:", error);
     }
   }, [darkMode]);
 
@@ -61,16 +54,15 @@ export default function Home() {
   };
   const switchLang = (l: "pt" | "en" | "es") => setLang(l);
 
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const scrollToProjects = () => scrollToSection('projectSection');
-  const scrollToContact = () => scrollToSection('aboutSection');
+  const scrollToProjects = () => scrollToSection("projectSection");
+  const scrollToContact = () => scrollToSection("aboutSection");
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -85,9 +77,9 @@ export default function Home() {
 
       {/* Main Content */}
       <main>
-
         {/* Hero Section */}
-        <HeroSection t={t}
+        <HeroSection
+          t={t}
           onScrollToProjects={scrollToProjects}
           onScrollToContact={scrollToContact}
         />
@@ -107,10 +99,9 @@ export default function Home() {
         {/* Skills */}
         <SkillsSection t={t} />
 
-
-
+        {/* Footer */}
+        <FooterSection t={t} />
       </main>
-
     </div>
   );
 }

@@ -45,12 +45,7 @@
       {
         "title": "BI Salud OPPES",
         "description": "Dashboard en Power BI para la presentación de datos de producción y financieros de las Unidades de Salud del Municipio.",
-        "stacks": [
-          "Power BI",
-          "Python",
-          "PostgreSQL",
-          "MySql"
-        ],
+        "stacks": ["Power BI", "Python", "PostgreSQL", "MySql"],
         "color": "from-yellow-300/20 to-yellow-600/20",
         "borderColor": "border-yellow-400/30",
         "github": "",
@@ -76,11 +71,7 @@
       {
         "title": "Portfolio",
         "description": "Landing page de presentación",
-        "stacks": [
-          "TypeScript",
-          "Next.js",
-          "TailwindCSS"
-        ],
+        "stacks": ["TypeScript", "Next.js", "TailwindCSS"],
         "color": "from-purple-300/20 to-purple-600/20",
         "borderColor": "border-purple-400/30",
         "github": "https://github.com/fab1omendes/fab1omendes.github.io",
@@ -154,8 +145,8 @@
         "title": "Desarrollador Full Stack Completo",
         "subtitle": "Desarrollo end-to-end con dominio completo del ciclo de desarrollo",
         "items": [
-          "Frontend moderno con React/Next.js",
-          "Backend robusto con Node.js/Python",
+          "Frontend moderno con React/Next.js/Angular",
+          "Backend robusto con Java/Node.js/NestJS/Python",
           "APIs RESTful y GraphQL",
           "Arquitectura de microservicios"
         ]
@@ -197,5 +188,12 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "title": "Fabio Mendes",
+    "subtitle": "Desarrollador Full Stack y Analista de Datos",
+    "copyright": "© 2025 Fábio Mendes. Todos los derechos reservados.",
+    "btmail": "Correo",
+    "bthome": "Volver arriba"
   }
 }
