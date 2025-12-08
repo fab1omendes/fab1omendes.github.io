@@ -8,7 +8,7 @@ export function ExperienceSection({ t }: LanguageProps) {
       id="experienceSection"
       className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30"
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl mb-4 text-foreground">
             {t.experiences.title}
