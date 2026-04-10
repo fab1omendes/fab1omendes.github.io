@@ -24,7 +24,7 @@ export function HeroSection({
                 <div className="w-full h-full rounded-full overflow-hidden bg-gray-300/50 flex items-center justify-center">
                   <div className="w-full">
                     <img
-                      src="https://github.com/fab1omendes.png"
+                      src="https://lh3.googleusercontent.com/a/ACg8ocLiezcnd7AImPDF4mdDQI1oB5AqzyhcAGDksWpitnFMVUJjjv3g=s303-c-no"
                       alt="Profile Image"
                     ></img>
                   </div>
