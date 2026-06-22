@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 import { LanguageProps } from "@/types/LanguageProps";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay"
+import React from "react";
 
 export function ProjectsSection({ t }: LanguageProps) {
   const project = t.projects.list; // array from projects of JSON
+
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
 
   return (
     <section id="projectSection" className="py-16 px-4 sm:px-6 lg:px-8">
@@ -90,15 +97,29 @@ export function ProjectsSection({ t }: LanguageProps) {
                   </div>
 
                   {/*Project Visual */}
-                  <div className="lg:w-80 flex-shrink-0">
-                    <div className="w-full h-48 lg:h-64 bg-gradient-to-br from-muted to-muted/50 rounded-lg flex items-center justify-center border border-border">
-                      <div className="text-center text-muted-foreground">
-                        <div className="text-4xl mb-2">💻</div>
-                        <p className="text-sm">
-                          {t.projects.title} {project.title}
-                        </p>
-                      </div>
-                    </div>
+                  <div className="lg:w-120 flex-shrink-0">
+                    {project.img && project.img.length > 0 && (
+                      <Carousel
+                        plugins={[plugin.current]}
+                        className="w-full"
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                      >
+                        <CarouselContent>
+                          {project.img.map((image, i) => (
+                            <CarouselItem key={i}>
+                              <img src={image} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover rounded-lg" />
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+
+                        <div className="flex justify-center gap-4 mt-4">
+                          <CarouselPrevious className="static translate-y-0 bg-gray-300 hover:bg-gray-300/70 text-black" />
+                          <CarouselNext className="static translate-y-0 bg-gray-300 hover:bg-gray-300/70 text-black" />
+                        </div>
+
+                      </Carousel>
+                    )}
                   </div>
                 </div>
               </div>

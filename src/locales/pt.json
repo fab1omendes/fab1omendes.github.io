@@ -39,6 +39,12 @@
         ],
         "color": "from-blue-300/20 to-blue-600/20",
         "borderColor": "border-blue-400/30",
+        "img": [
+          "/img/dwsaude/dwsaude1.png",
+          "/img/dwsaude/dwsaude2.png",
+          "/img/dwsaude/dwsaude3.png",
+          "/img/dwsaude/dwsaude4.png"
+        ],
         "github": "https://github.com/fab1omendes/dwsaude",
         "demo": "https://dwsaude.diadema.sp.gov.br"
       },
@@ -57,8 +63,14 @@
           "PostgreSQL",
           "Docker"
         ],
-        "color": "from-green-300/20 to-green-600/20",
-        "borderColor": "border-green-400/30",
+        "color": "from-orange-300/20 to-orange-600/20",
+        "borderColor": "border-orange-400/30",
+        "img": [
+          "/img/sird/sird1.png",
+          "/img/sird/sird2.png",
+          "/img/sird/sird3.png",
+          "/img/sird/sird4.png"
+        ],
         "github": "https://github.com/fab1omendes/sird",
         "demo": ""
       },
@@ -75,8 +87,39 @@
         ],
         "color": "from-yellow-300/20 to-yellow-600/20",
         "borderColor": "border-yellow-400/30",
+        "img": [
+          "/img/eecg/eecg1.png",
+          "/img/eecg/eecg2.png",
+          "/img/eecg/eecg3.png",
+          "/img/eecg/eecg4.png"
+        ],
         "github": "https://github.com/fab1omendes/eecg",
         "demo": "https://eecg.vercel.app/"
+      },
+      {
+        "title": "Lixeira&Cia",
+        "description": "Marketplace de produtos de limpeza, com foco na venda de lixeiras domésticas e comerciais. Possui design responsivo, utilizando o que é mais moderno em React. Para login dos usuários utiliza a API OAuth 2.0 Google, e possui painel administrativo para administração da loja.",
+        "stacks": [
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "Django Rest API",
+          "Supabase",
+          "Google OAuth2.0"
+        ],
+        "color": "from-green-300/20 to-green-600/20",
+        "borderColor": "border-green-400/30",
+        "img": [
+          "/img/lixeiraecia/lixeiraecia1.png",
+          "/img/lixeiraecia/lixeiraecia2.png",
+          "/img/lixeiraecia/lixeiraecia3.png",
+          "/img/lixeiraecia/lixeiraecia4.png",
+          "/img/lixeiraecia/lixeiraecia5.png",
+          "/img/lixeiraecia/lixeiraecia6.png",
+          "/img/lixeiraecia/lixeiraecia7.png"
+        ],
+        "github": "https://github.com/fab1omendes/lixeira-cia",
+        "demo": "https://lixeiracia.vercel.app/"
       },
       {
         "title": "BI Saudde OPPES",
@@ -88,34 +131,34 @@
           "PostgreSQL",
           "MySql"
         ],
-        "color": "from-yellow-300/20 to-yellow-600/20",
-        "borderColor": "border-yellow-400/30",
+        "color": "from-purple-300/20 to-purple-600/20",
+        "borderColor": "border-purple-400/30",
+        "img": [
+          "/img/bi/bi1.png",
+          "/img/bi/bi2.png",
+          "/img/bi/bi3.png",
+          "/img/bi/bi4.png"
+        ],
         "github": "",
         "demo": "https://app.powerbi.com/view?r=eyJrIjoiYWFkZTJlNmUtYjM0YS00ZGE5LTlkMGUtMDY0YTM1YTI5ZjllIiwidCI6ImVlNTUyZGQ3LTAyYWYtNDE5MC1iN2VhLWEzMWY2NjE2ZTg1YSJ9"
       },
       {
-        "title": "DiaSus",
-        "description": "Prontuário Eletrônico do Paciente (PEP) para uso nos ambulatórios de referência do município de Diadema, com funcionalidades como agendamento de consultas, atendimento clínico, emissão de prescrições e receitas, preenchimento de formulários padrão e impressão de fichas ou envio por email/whatsApp",
-        "stacks": [
-          "Java",
-          "Next,js",
-          "NestJS",
-          "TypeScript",
-          "PostgreSQL",
-          "Docker",
-          "Kubernetes"
-        ],
-        "color": "from-green-300/20 to-green-600/20",
-        "borderColor": "border-green-400/30",
-        "github": "https://github.com/fab1omendes/diasus",
-        "demo": ""
-      },
-      {
         "title": "Portfolio",
-        "description": "Landpage to apresentation ",
-        "stacks": ["TypeScript", "Next,js", "TailwindCSS"],
-        "color": "from-purple-300/20 to-purple-600/20",
-        "borderColor": "border-purple-400/30",
+        "description": "Portfólio para apresentação profissional",
+        "stacks": [
+          "TypeScript",
+          "Next,js",
+          "TailwindCSS",
+          "JSON"
+        ],
+        "color": "from-red-300/20 to-red-600/20",
+        "borderColor": "border-red-400/30",
+        "img": [
+          "/img/portfolio/portfolio1.png",
+          "/img/portfolio/portfolio2.png",
+          "/img/portfolio/portfolio3.png",
+          "/img/portfolio/portfolio4.png"
+        ],
         "github": "https://github.com/fab1omendes/fab1omendes.github.io",
         "demo": "https://fab1omendes.vercel.app/"
       }
