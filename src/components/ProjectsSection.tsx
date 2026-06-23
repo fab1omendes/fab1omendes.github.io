@@ -114,8 +114,8 @@ export function ProjectsSection({ t }: LanguageProps) {
                         </CarouselContent>
 
                         <div className="flex justify-center gap-4 mt-4">
-                          <CarouselPrevious className="static translate-y-0 bg-gray-300 hover:bg-gray-300/70 text-black" />
-                          <CarouselNext className="static translate-y-0 bg-gray-300 hover:bg-gray-300/70 text-black" />
+                          <CarouselPrevious className="static translate-y-0 bg-gray-500 hover:bg-gray-500/70 text-white" />
+                          <CarouselNext className="static translate-y-0 bg-gray-500 hover:bg-gray-500/70 text-white" />
                         </div>
 
                       </Carousel>

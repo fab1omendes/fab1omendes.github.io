@@ -27,14 +27,15 @@
     "list": [
       {
         "title": "DW Health",
-        "description": "Data Warehouse project for presenting reports, dashboards, and insights from Primary Healthcare EHR data according to management demand.",
+        "description": "DW Health is a comprehensive Data Warehouse platform and dashboard indicator focused on public health (e.g., Previne Brasil indicators, such as Cancer Prevention, Pregnant Women, etc.). The system extracts information from the patient electronic health record database and transforms it into managerial information, presenting it in interactive analytical dashboards.",
         "stacks": [
-          "Python",
-          "Dash",
-          "TypeScript",
           "Next.js",
+          "TypeScript",
           "TailwindCSS",
+          "NestJS",
+          "Prisma",
           "PostgreSQL",
+          "Python (ETLs)",
           "Docker"
         ],
         "color": "from-blue-300/20 to-blue-600/20",
@@ -43,24 +44,26 @@
           "/img/dwsaude/dwsaude1.png",
           "/img/dwsaude/dwsaude2.png",
           "/img/dwsaude/dwsaude3.png",
-          "/img/dwsaude/dwsaude4.png"
+          "/img/dwsaude/dwsaude4.png",
+          "/img/dwsaude/dwsaude5.png",
+          "/img/dwsaude/dwsaude6.png"
         ],
-        "github": "https://github.com/fab1omendes/dwsaude",
-        "demo": "https://dwsaude.diadema.sp.gov.br"
+        "github": "https://github.com/fab1omendes/dwsaude/blob/main/README.md",
+        "demo": "Not available externally"
       },
       {
         "title": "SIRD",
-        "description": "Integrated Digital Regulation System with messaging via EvolutionAPI and N8N",
+        "description": "SIRD is an integrated solution designed to optimize health regulation processes. The system combines efficient data management with an advanced messaging module, allowing direct communication with patients via WhatsApp through EvolutionAPI. Supported by n8n, SIRD automates the flow of intelligent triggers and responses, as well as offering a strategic functionality for uploading custom spreadsheets for batch processing of appointment scheduling and cancellations, ensuring operational agility and precision.",
         "stacks": [
-          "Next.js",
-          "NestJS",
+          "Next,js",
           "TypeScript",
           "TailwindCSS",
-          "Java Spring Boot",
+          "Spring Boot (Java)",
           "JWT",
           "EvolutionAPI",
           "N8N",
           "PostgreSQL",
+          "Python (ETLs)",
           "Docker"
         ],
         "color": "from-orange-300/20 to-orange-600/20",
@@ -69,10 +72,15 @@
           "/img/sird/sird1.png",
           "/img/sird/sird2.png",
           "/img/sird/sird3.png",
-          "/img/sird/sird4.png"
+          "/img/sird/sird4.png",
+          "/img/sird/sird5.png",
+          "/img/sird/sird6.png",
+          "/img/sird/sird7.png",
+          "/img/sird/sird8.png",
+          "/img/sird/sird9.png"
         ],
-        "github": "https://github.com/fab1omendes/sird",
-        "demo": ""
+        "github": "https://github.com/fab1omendes/sird/blob/main/README.md",
+        "demo": "Not available externally"
       },
       {
         "title": "EECG",
@@ -93,7 +101,7 @@
           "/img/eecg/eecg3.png",
           "/img/eecg/eecg4.png"
         ],
-        "github": "https://github.com/fab1omendes/eecg",
+        "github": "https://github.com/fab1omendes/eecg/blob/main/README.md",
         "demo": "https://eecg.vercel.app/"
       },
       {
@@ -118,12 +126,12 @@
           "/img/lixeiraecia/lixeiraecia6.png",
           "/img/lixeiraecia/lixeiraecia7.png"
         ],
-        "github": "https://github.com/fab1omendes/lixeira-cia",
+        "github": "https://github.com/fab1omendes/lixeiraecia/blob/main/README.md",
         "demo": "https://lixeiracia.vercel.app/"
       },
       {
         "title": "BI Health OPPES",
-        "description": "Power BI dashboard presenting production and financial metrics of municipal Health Units.",
+        "description": "Construction of Python ETLs and Power BI dashboards to present reports, charts, and insights on the production and financial data of the Municipal Health Units.",
         "stacks": [
           "Power BI",
           "Python",
@@ -139,17 +147,23 @@
           "/img/bi/bi3.png",
           "/img/bi/bi4.png"
         ],
-        "github": "",
+        "github": "Not available",
         "demo": "https://app.powerbi.com/view?r=eyJrIjoiYWFkZTJlNmUtYjM0YS00ZGE5LTlkMGUtMDY0YTM1YTI5ZjllIiwidCI6ImVlNTUyZGQ3LTAyYWYtNDE5MC1iN2VhLWEzMWY2NjE2ZTg1YSJ9"
       },
       {
         "title": "Portfolio",
-        "description": "Landing page for personal presentation.",
+        "description": "Website for professional presentation with personal, academic, career information and developed projects.",
         "stacks": [
-          "TypeScript",
           "Next.js",
+          "TypeScript",
           "TailwindCSS",
-          "JSON"
+          "Radix UI",
+          "Framer Motion",
+          "Lucide React",
+          "Radix Icons",
+          "Vercel",
+          "GitHub Pages",
+          "JSON (Multilanguage pages)"
         ],
         "color": "from-red-300/20 to-red-600/20",
         "borderColor": "border-red-400/30",
@@ -157,9 +171,11 @@
           "/img/portfolio/portfolio1.png",
           "/img/portfolio/portfolio2.png",
           "/img/portfolio/portfolio3.png",
-          "/img/portfolio/portfolio4.png"
+          "/img/portfolio/portfolio4.png",
+          "/img/portfolio/portfolio5.png",
+          "/img/portfolio/portfolio6.png"
         ],
-        "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+        "github": "https://github.com/fab1omendes/fab1omendes.github.io/blob/main/README.md",
         "demo": "https://fab1omendes.vercel.app/"
       }
     ]
@@ -230,8 +246,8 @@
         "title": "Complete Full Stack Developer",
         "subtitle": "End-to-end development with full mastery of the development cycle",
         "items": [
-          "Modern frontend with React/Next.js/Angular",
-          "Robust backend with Java/Node.js/NestJS/Python",
+          "Modern frontend with React/Next.js/Angular/TailwindCSS",
+          "Robust backend with Java Spring Boot/Node.js/NestJS/Django",
           "RESTful and GraphQL APIs",
           "Microservices architecture"
         ]

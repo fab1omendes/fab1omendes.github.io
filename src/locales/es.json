@@ -27,14 +27,15 @@
     "list": [
       {
         "title": "DW Salud",
-        "description": "Proyecto de Data-Warehouse para la presentación de informes, gráficos e insights de los datos de la Historia Clínica Electrónica de la Atención Primaria Municipal según la demanda de la gestión.",
+        "description": "DW Salud es una plataforma integral de Data Warehouse y panel de indicadores centrada en la salud pública (ej: indicadores de Previne Brasil, como Prevención de Cáncer, Gestantes, etc.). El sistema extrae información de la base de datos de historia clínica electrónica del paciente y la transforma en información gerencial, presentándola en dashboards analíticos interactivos.",
         "stacks": [
-          "Python",
-          "Dash",
-          "TypeScript",
           "Next.js",
+          "TypeScript",
           "TailwindCSS",
+          "NestJS",
+          "Prisma",
           "PostgreSQL",
+          "Python (ETLs)",
           "Docker"
         ],
         "color": "from-blue-300/20 to-blue-600/20",
@@ -43,24 +44,26 @@
           "/img/dwsaude/dwsaude1.png",
           "/img/dwsaude/dwsaude2.png",
           "/img/dwsaude/dwsaude3.png",
-          "/img/dwsaude/dwsaude4.png"
+          "/img/dwsaude/dwsaude4.png",
+          "/img/dwsaude/dwsaude5.png",
+          "/img/dwsaude/dwsaude6.png"
         ],
-        "github": "https://github.com/fab1omendes/dwsaude",
-        "demo": "https://dwsaude.diadema.sp.gov.br"
+        "github": "https://github.com/fab1omendes/dwsaude/blob/main/README.md",
+        "demo": "No disponible externamente"
       },
       {
         "title": "SIRD",
-        "description": "Sistema integrado de Regulación Digital con mensajería vía EvolutionAPI y N8N",
+        "description": "SIRD es una solución integrada diseñada para optimizar los procesos de regulación en salud. El sistema combina una gestión eficiente de datos con un módulo de mensajería avanzado, permitiendo la comunicación directa con los pacientes vía WhatsApp a través de EvolutionAPI. Con el soporte de n8n, SIRD automatiza el flujo de disparos y respuestas inteligentes, además de ofrecer una funcionalidad estratégica de carga de hojas de cálculo personalizadas para el procesamiento por lotes de programación y cancelación de citas, garantizando agilidad y precisión operativa.",
         "stacks": [
-          "Next.js",
-          "NestJS",
+          "Next,js",
           "TypeScript",
           "TailwindCSS",
-          "Java Spring Boot",
+          "Spring Boot (Java)",
           "JWT",
           "EvolutionAPI",
           "N8N",
           "PostgreSQL",
+          "Python (ETLs)",
           "Docker"
         ],
         "color": "from-orange-300/20 to-orange-600/20",
@@ -69,10 +72,15 @@
           "/img/sird/sird1.png",
           "/img/sird/sird2.png",
           "/img/sird/sird3.png",
-          "/img/sird/sird4.png"
+          "/img/sird/sird4.png",
+          "/img/sird/sird5.png",
+          "/img/sird/sird6.png",
+          "/img/sird/sird7.png",
+          "/img/sird/sird8.png",
+          "/img/sird/sird9.png"
         ],
-        "github": "https://github.com/fab1omendes/sird",
-        "demo": ""
+        "github": "https://github.com/fab1omendes/sird/blob/main/README.md",
+        "demo": "No disponible externamente"
       },
       {
         "title": "EECG",
@@ -93,7 +101,7 @@
           "/img/eecg/eecg3.png",
           "/img/eecg/eecg4.png"
         ],
-        "github": "https://github.com/fab1omendes/eecg",
+        "github": "https://github.com/fab1omendes/eecg/blob/main/README.md",
         "demo": "https://eecg.vercel.app/"
       },
       {
@@ -118,12 +126,12 @@
           "/img/lixeiraecia/lixeiraecia6.png",
           "/img/lixeiraecia/lixeiraecia7.png"
         ],
-        "github": "https://github.com/fab1omendes/lixeira-cia",
+        "github": "https://github.com/fab1omendes/lixeiraecia/blob/main/README.md",
         "demo": "https://lixeiracia.vercel.app/"
       },
       {
         "title": "BI Salud OPPES",
-        "description": "Dashboard en Power BI para la presentación de datos de producción y financieros de las Unidades de Salud del Municipio.",
+        "description": "Construcción de ETLs en Python y dashboards en Power BI para la presentación de informes, gráficos e insights de los datos de producción y financieros de las Unidades de Salud del Municipio.",
         "stacks": [
           "Power BI",
           "Python",
@@ -139,17 +147,23 @@
           "/img/bi/bi3.png",
           "/img/bi/bi4.png"
         ],
-        "github": "",
+        "github": "No disponible",
         "demo": "https://app.powerbi.com/view?r=eyJrIjoiYWFkZTJlNmUtYjM0YS00ZGE5LTlkMGUtMDY0YTM1YTI5ZjllIiwidCI6ImVlNTUyZGQ3LTAyYWYtNDE5MC1iN2VhLWEzMWY2NjE2ZTg1YSJ9"
       },
       {
         "title": "Portfolio",
-        "description": "Landing page de presentación",
+        "description": "Sitio web de presentación profesional con información personal, académica, profesional y proyectos desarrollados.",
         "stacks": [
-          "TypeScript",
           "Next.js",
+          "TypeScript",
           "TailwindCSS",
-          "JSON"
+          "Radix UI",
+          "Framer Motion",
+          "Lucide React",
+          "Radix Icons",
+          "Vercel",
+          "GitHub Pages",
+          "JSON (Multilanguage pages)"
         ],
         "color": "from-red-300/20 to-red-600/20",
         "borderColor": "border-red-400/30",
@@ -157,9 +171,11 @@
           "/img/portfolio/portfolio1.png",
           "/img/portfolio/portfolio2.png",
           "/img/portfolio/portfolio3.png",
-          "/img/portfolio/portfolio4.png"
+          "/img/portfolio/portfolio4.png",
+          "/img/portfolio/portfolio5.png",
+          "/img/portfolio/portfolio6.png"
         ],
-        "github": "https://github.com/fab1omendes/fab1omendes.github.io",
+        "github": "https://github.com/fab1omendes/fab1omendes.github.io/blob/main/README.md",
         "demo": "https://fab1omendes.vercel.app/"
       }
     ]
@@ -230,8 +246,8 @@
         "title": "Desarrollador Full Stack Completo",
         "subtitle": "Desarrollo end-to-end con dominio completo del ciclo de desarrollo",
         "items": [
-          "Frontend moderno con React/Next.js/Angular",
-          "Backend robusto con Java/Node.js/NestJS/Python",
+          "Frontend moderno con React/Next.js/Angular/TailwindCSS",
+          "Backend robusto con Java Spring Boot/Node.js/NestJS/Django",
           "APIs RESTful y GraphQL",
           "Arquitectura de microservicios"
         ]
