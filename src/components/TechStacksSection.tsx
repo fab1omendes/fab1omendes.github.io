@@ -2,22 +2,23 @@ import { LanguageProps } from "@/types/LanguageProps";
 
 //Tech list
 const techStacks = [
-  { name: "Docker", icon: "🐳", color: "#2496ED" },
-  { name: "HTML", icon: "🌐", color: "#E34F26" },
-  { name: "CSS", icon: "🎨", color: "#1572B6" },
-  { name: "TailwindCSS", icon: "💨", color: "#06B6D4" },
-  { name: "TypeScript", icon: "📘", color: "#3178C6" },
+  
+  { name: "TypeScript", icon: "📘", color: "#3178C6" },    
+  { name: "Java", icon: "☕", color: "#3776AB" },
+  { name: "Python", icon: "🐍", color: "#3776AB" },   
   { name: "JavaScript", icon: "📜", color: "#F7DF1E" },
+  { name: "Spring Boot", icon: "🍃", color: "#119DFF" },
+  { name: "Next.js", icon: "▲", color: "#000000" },
+  { name: "NestJS", icon: "🦁", color: "#FF4B4B" },
+  { name: "Angular", icon: "🅰️", color: "#E34F26" },
+  { name: "TailwindCSS", icon: "💨", color: "#06B6D4" },
   { name: "ReactJS", icon: "⚛️", color: "#61DAFB" },
-  { name: "Next,js", icon: "▲", color: "#000000" },
   { name: "NodeJS", icon: "🟢", color: "#339933" },
-  { name: "Python", icon: "🐍", color: "#3776AB" },
-  { name: "Dash", icon: "📊", color: "#119DFF" },
-  { name: "Streamlit", icon: "🚀", color: "#FF4B4B" },
   { name: "SQL", icon: "🗄️", color: "#4479A1" },
   { name: "PostgreSQL", icon: "🐘", color: "#336791" },
   { name: "NoSQL", icon: "📋", color: "#4DB33D" },
   { name: "Power BI", icon: "📈", color: "#F2C811" },
+  { name: "Docker", icon: "🐳", color: "#2496ED" }, 
 ];
 
 export function TechStacksSection({ t }: LanguageProps) {
